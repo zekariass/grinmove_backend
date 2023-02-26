@@ -1,0 +1,58 @@
+Virtual env name: manaenv
+    ==>conda create --name myhomenv
+    ==>conda activate myhomenv
+    ==>conda deactivate myhomenv
+    ==>conda env list
+    ==>run "conda init" in powershell if "conda activate" does not work
+
+pip install django
+pip install djangorestframework
+pip freeze > requirements.txs
+
+pip instal -r requirements.txt
+
+django-admin startproject myhome 
+
+django-admin startapp properties
+django-admin startapp notifications
+django-admin startapp payments
+django-admin startapp subscriptions
+django-admin startapp users
+django-admin startapp systems
+django-admin startapp agents
+django-admin startapp commons
+django-admin startapp listings
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+
+
+python manage.py runserver
+
+
+======Authentication=============
+pip install django-cors-headers
+pip install djangorestframework-simplejwt 
+
+======Important libraries from tutorial==========
+pyyaml
+requests
+
+
+=================================
+Worth to read about
+=================================
+rest_framework.authtoken
+getpass()
+cronjob
+celery
+NGINX
+Reverse, URLs, f-string
+Algolia
+Tagging
+
+request = self.context.get("request")  ==> get request object in serializer class
+use validators as much as possible in models, but when request context (i.e. signed in user object) is 
+neccessary, use it in serializer
