@@ -189,7 +189,8 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'https://grinmovebackendtrial.azurewebsites.net'
+    'https://grinmovebackendtrial.azurewebsites.net',
+    'https://happymove.azurewebsites.net/'
 ]
 
 
@@ -197,7 +198,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ['https://grinmovebackendtrial.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://grinmovebackendtrial.azurewebsites.net', 
+                        'https://happymove.azurewebsites.net']
 
 CORS_REPLACE_HTTPS_REFERER = True
 
