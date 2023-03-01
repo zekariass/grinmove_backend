@@ -103,16 +103,24 @@ DATABASES = {
     #     'PORT': os.environ.get('DATABASE_PORT', ''),
     # }
 
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': "myproject",
+    #     'USER': "myadmin@pgdemoserver",
+    #     'PASSWORD': "ThisIs4P4ssw0rd!=1",
+    #     'HOST': "pgdemoserver.postgres.database.azure.com",
+    #     'PORT': 5432,
+    #     'OPTIONS': {
+    #         'sslmode': 'require',
+    #     }
+    # }
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('DATABASE_NAME', ''),
-        'USER': os.environ.get('DATABASE_USER', ''),
-        'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
-        'HOST': os.environ.get('DATABASE_HOST', ''),
-        'PORT': os.environ.get('DATABASE_PORT', ''),
-        'OPTIONS': {
-            'sslmode': 'require',
-        }
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zekariass$grinmove',
+        'USER': 'zekariass',
+        'PASSWORD': 'Zakinfo@321',
+        'HOST': 'zekariass.mysql.pythonanywhere-services.com',
     }
 }
 
