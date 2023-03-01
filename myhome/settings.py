@@ -94,14 +94,14 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
 
-     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myhomedb',
-        'USER': 'postgres',
-        'PASSWORD': 'Zakinfo@23',
-        'HOST': '127.0.0.1',
-        'PORT': os.environ.get('DATABASE_PORT', ''),
-    }
+    #  'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'myhomedb',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'Zakinfo@23',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': os.environ.get('DATABASE_PORT', ''),
+    # }
 
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -115,13 +115,13 @@ DATABASES = {
     #     }
     # }
 
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'zekariass$grinmove',
-    #     'USER': 'zekariass',
-    #     'PASSWORD': 'Zakinfo@321',
-    #     'HOST': 'zekariass.mysql.pythonanywhere-services.com',
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zekariass$grinmove',
+        'USER': 'zekariass',
+        'PASSWORD': 'Zakinfo@321',
+        'HOST': 'zekariass.mysql.pythonanywhere-services.com',
+    }
 }
 
 
