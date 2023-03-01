@@ -103,7 +103,7 @@ DATABASES = {
     #     'USER': 'postgres',
     #     'PASSWORD': 'Zakinfo@23',
     #     'HOST': '127.0.0.1',
-    #     'PORT': '5555',
+    #     'PORT': os.environ.get('DATABASE_PORT', ''),
     # }
 
     'default': {
@@ -190,7 +190,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
     'https://grinmovebackendtrial.azurewebsites.net',
-    'https://happymove.azurewebsites.net/'
+    'https://happymove.azurewebsites.net'
 ]
 
 
@@ -198,12 +198,12 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ['https://grinmovebackendtrial.azurewebsites.net', 
-                        'https://happymove.azurewebsites.net']
+# CSRF_TRUSTED_ORIGINS = ['https://grinmovebackendtrial.azurewebsites.net', 
+#                         'https://happymove.azurewebsites.net']
 
 CORS_REPLACE_HTTPS_REFERER = True
 
-CSRF_COOKIE_DOMAIN = 'azurewebsites.net'
+# CSRF_COOKIE_DOMAIN = 'azurewebsites.net'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
