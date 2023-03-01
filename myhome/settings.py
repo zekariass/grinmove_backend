@@ -94,26 +94,26 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
 
-     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'myhomedb',
-        'USER': 'postgres',
-        'PASSWORD': 'Zakinfo@23',
-        'HOST': '127.0.0.1',
-        'PORT': os.environ.get('DATABASE_PORT', ''),
-    }
-
-    # 'default': {
+    #  'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'NAME': os.environ.get('DATABASE_NAME', ''),
-    #     'USER': os.environ.get('DATABASE_USER', ''),
-    #     'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
-    #     'HOST': os.environ.get('DATABASE_HOST', ''),
+    #     'NAME': 'myhomedb',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'Zakinfo@23',
+    #     'HOST': '127.0.0.1',
     #     'PORT': os.environ.get('DATABASE_PORT', ''),
-    #     'OPTIONS': {
-    #         'sslmode': 'require',
-    #     }
     # }
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('DATABASE_NAME', ''),
+        'USER': os.environ.get('DATABASE_USER', ''),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD', ''),
+        'HOST': os.environ.get('DATABASE_HOST', ''),
+        'PORT': os.environ.get('DATABASE_PORT', ''),
+        'OPTIONS': {
+            'sslmode': 'require',
+        }
+    }
 }
 
 
