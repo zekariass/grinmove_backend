@@ -225,25 +225,26 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-# STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-# MEDIA_ROOT for storeing images and files
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT for storing images and files
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
+# DEFAULT_FILE_STORAGE = 'custom_storage.custom_azure.AzureMediaStorage'
+# STATICFILES_STORAGE = 'custom_storage.custom_azure.AzureStaticStorage'
 
-DEFAULT_FILE_STORAGE = 'custom_storage.custom_azure.AzureMediaStorage'
-STATICFILES_STORAGE = 'custom_storage.custom_azure.AzureStaticStorage'
+# STATIC_LOCATION = "static"
+# MEDIA_LOCATION = "media"
 
-STATIC_LOCATION = "static"
-MEDIA_LOCATION = "media"
-
-AZURE_ACCOUNT_NAME = "grinmovestorage"
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
+# AZURE_ACCOUNT_NAME = "grinmovestorage"
+# AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+# STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
+# MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

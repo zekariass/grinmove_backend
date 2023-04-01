@@ -32,7 +32,7 @@ class PropertyListCreateView(generics.ListCreateAPIView):
     # ordering_fields = ['description']
 
     def post(self, request, format=None):
-        print(request.data)
+        # print(request.data)
         property_address = request.data.pop("address")
         unresolved_sub_property_data = request.data.pop("category")
 

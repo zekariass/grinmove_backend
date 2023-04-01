@@ -193,7 +193,7 @@ class SupportedCardScheme(models.Model):
     description = models.TextField(null=True, blank=True)
 
     def __str__(self):
-        return self.scheme_name
+        return self.name
 
 
 """A user may use his acceptable credit card to pay the payment. This is the easiest way of payment method available. """
