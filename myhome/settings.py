@@ -117,10 +117,11 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zekariassemegnew$grinmove',
+        'NAME': 'zekariassemegnew$grinmove3',
         'USER': 'zekariassemegnew',
-        'PASSWORD': 'Zakinfo@321',
+        'PASSWORD': 'Zakinfo@23',
         'HOST': 'zekariassemegnew.mysql.pythonanywhere-services.com',
+        'PORT': ''
     }
 }
 
@@ -194,8 +195,6 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
-    'https://grinmovebackendtrial.azurewebsites.net',
-    'https://happymove.azurewebsites.net'
 ]
 
 
