@@ -117,7 +117,7 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zekariassemegnew$grinmove3',
+        'NAME': 'zekariassemegnew$grinmove2',
         'USER': 'zekariassemegnew',
         'PASSWORD': 'Zakinfo@23',
         'HOST': 'zekariassemegnew.mysql.pythonanywhere-services.com',
