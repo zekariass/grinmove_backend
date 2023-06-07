@@ -579,6 +579,9 @@ class PropertyImage(models.Model):
     label = models.ForeignKey(PropertyFileLabel, related_name="images", on_delete=models.SET_NULL, null=True, blank=True)
     uploaded_on = models.DateTimeField(default=timezone.now, editable=False)
 
+    def __str__(self):
+        return f"{self.image}"
+
 
 """video of the property that is uploaded to the system"""
 class PropertyVideo(models.Model):
